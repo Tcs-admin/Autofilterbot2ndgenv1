@@ -1436,6 +1436,18 @@ async def cb_accuracy(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
+                    "45 %", callback_data=f"set(accuracy|0.50|{chat_id}|{val})"
+                )
+        ],
+        [
+            InlineKeyboardButton
+                (
+                    "40 %", callback_data=f"set(accuracy|0.50|{chat_id}|{val})"
+                )
+        ],
+        [
+            InlineKeyboardButton
+                (
                     "🔙 Back", callback_data=f"config({chat_id})"
                 )
         ]
@@ -1608,7 +1620,7 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/AlbertEinstein_TG"
+                    "Join Us ", url="https://t.me/telecinemas"
                 ),
                 
             InlineKeyboardButton
@@ -1639,10 +1651,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
-        ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('Join US', url='https://t.me/telecinemas'),
+            InlineKeyboardButton('For Series', url ='https://t.me/tcseries')
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
